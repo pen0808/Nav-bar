@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-container{
+  width: 100%;
+}
+.nav-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  background-color: blueviolet;
+
+}
+.left-container{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+.icon{
+  width: 30px;
+  height: 30px;
+}
+.icon img{
+  width: 100%;
+  height: 100%;
+}
+.links{
+  padding: 0.5rem;
+  transition: all 0.5s;
+}
+.links a{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  position: relative;
+}
+.links a::before{
+  content: " ";
+  width:0%;
+  height: 0.1rem;
+  position: absolute;
+  background-color: rgb(254, 4, 4);
+  bottom: -4px;
+  transition: width 0.5s;
+}
+.links:hover a::before{
+  width: 100%;
+}
+.links:hover{
+  background-color: rgb(56, 55, 55);
+  border-radius: 0.5rem;
+}
+.right-container{
+  width: fit-content;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+.profile-pic{
+  width:30px;
+  height: 30px;
+}
+.profile-pic img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.bell i{
+  font-size: 1.3rem;
+  color: rgb(55, 55, 55);
+}
